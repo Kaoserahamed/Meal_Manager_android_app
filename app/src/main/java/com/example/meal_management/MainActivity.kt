@@ -9,9 +9,19 @@ import androidx.annotation.RequiresApi
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.meal_management.presentation.screen.GroceryListScreen
 import com.example.meal_management.presentation.screen.LoginScreen
+import com.example.meal_management.presentation.screen.MealPlanScreen
+import com.example.meal_management.presentation.screen.NutritionDashboardScreen
+import com.example.meal_management.presentation.screen.RecipeDetailScreen
+import com.example.meal_management.presentation.screen.RecipeFormScreen
+import com.example.meal_management.presentation.screen.RecipeListScreen
 import com.example.meal_management.presentation.screen.SignUpScreen
 import com.example.meal_management.presentation.viewmodel.AuthViewModel
+import com.example.meal_management.presentation.viewmodel.GroceryViewModel
+import com.example.meal_management.presentation.viewmodel.MealPlanViewModel
+import com.example.meal_management.presentation.viewmodel.NutritionViewModel
+import com.example.meal_management.presentation.viewmodel.RecipeViewModel
 import com.example.meal_management.ui.theme.Meal_ManagementTheme
 import com.example.meal_management.util.Constants
 import com.google.firebase.FirebaseApp
@@ -32,6 +42,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             Meal_ManagementTheme {
                 val authViewModel: AuthViewModel by viewModels()
+                val recipeViewModel: RecipeViewModel by viewModels()
+                val mealPlanViewModel: MealPlanViewModel by viewModels()
+                val nutritionViewModel: NutritionViewModel by viewModels()
+                val groceryViewModel: GroceryViewModel by viewModels()
                 val navController = rememberNavController()
                 
                 NavHost(
@@ -104,6 +118,31 @@ class MainActivity : ComponentActivity() {
                     // Communication
                     composable(Constants.Routes.CHAT) {
                         Chat(navController = navController)
+                    }
+
+                    // Meal platform screens
+                    composable(Constants.Routes.RECIPE_LIST) {
+                        RecipeListScreen(navController = navController, recipeViewModel = recipeViewModel)
+                    }
+
+                    composable(Constants.Routes.RECIPE_DETAIL) {
+                        RecipeDetailScreen(navController = navController, recipeViewModel = recipeViewModel)
+                    }
+
+                    composable(Constants.Routes.RECIPE_FORM) {
+                        RecipeFormScreen(navController = navController, recipeViewModel = recipeViewModel)
+                    }
+
+                    composable(Constants.Routes.MEAL_PLAN) {
+                        MealPlanScreen(navController = navController, mealPlanViewModel = mealPlanViewModel)
+                    }
+
+                    composable(Constants.Routes.NUTRITION_DASHBOARD) {
+                        NutritionDashboardScreen(navController = navController, nutritionViewModel = nutritionViewModel)
+                    }
+
+                    composable(Constants.Routes.GROCERY_LIST) {
+                        GroceryListScreen(navController = navController, groceryViewModel = groceryViewModel)
                     }
                 }
             }

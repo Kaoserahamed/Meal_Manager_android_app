@@ -11,6 +11,11 @@ object Constants {
     const val COLLECTION_DEPOSIT_HISTORY = "depositHistory"
     const val COLLECTION_SHOPPING_HISTORY = "shoppingHistory"
     const val COLLECTION_MESSAGES = "messages"
+    const val COLLECTION_RECIPES = "recipes"
+    const val COLLECTION_MEAL_PLANS = "mealPlans"
+    const val COLLECTION_NUTRITION_LOGS = "nutritionLogs"
+    const val COLLECTION_NUTRITION_GOALS = "nutritionGoals"
+    const val COLLECTION_GROCERY_LISTS = "groceryLists"
     
     // Validation
     const val MIN_PASSWORD_LENGTH = 6
@@ -33,6 +38,13 @@ object Constants {
         const val SHOPPING_HISTORY = "shophis"
         const val CHAT = "chat"
         const val CHANGE_MANAGER = "change"
+        // Meal platform routes
+        const val RECIPE_LIST = "recipelist"
+        const val RECIPE_DETAIL = "recipedetail"
+        const val RECIPE_FORM = "recipeform"
+        const val MEAL_PLAN = "mealplan"
+        const val NUTRITION_DASHBOARD = "nutrition"
+        const val GROCERY_LIST = "grocerylist"
     }
     
     // Error Messages

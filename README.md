@@ -28,6 +28,13 @@ A modern Android application for managing shared meal expenses in hostels, share
 - Individual member statistics
 - Detailed transaction history
 
+### 🍳 Meal Platform (Phase 1)
+- **Recipe Management**: Create, edit, view and delete recipes with ingredients, instructions, prep/cook time, servings and tags
+- **Ingredient Database**: Per-ingredient quantity and unit with automatic serving-size scaling
+- **Meal Planning**: Weekly meal plans with per-day, per-meal-type recipe assignments and templates
+- **Nutrition Tracking**: Daily calories/macros logging, per-serving nutrition, goals and progress percentages
+- **Grocery List Generation**: Auto-generate grocery lists from meal plans, aggregated by ingredient, categorized by aisle, with check-off support
+
 ## 🛠️ Tech Stack
 
 - **Language**: Kotlin
@@ -192,6 +199,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [x] Deposit & meal tracking
 - [x] Shopping expense management
 - [x] Transaction history
+- [x] Recipe management
+- [x] Ingredient database & serving scaling
+- [x] Meal planning
+- [x] Nutrition tracking
+- [x] Grocery list generation
 - [ ] In-app chat
 - [ ] Push notifications
 - [ ] Data export (PDF/Excel)
