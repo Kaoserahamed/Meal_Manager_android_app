@@ -2,9 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [development]
-  pull_request:
-    branches: [development]
+    branches: \[main\]
 
 jobs:
   lint:
@@ -69,3 +67,4 @@ jobs:
       - name: Distribute to Firebase App Distribution
         run: |
           echo "Firebase App Distribution deployment"
+
