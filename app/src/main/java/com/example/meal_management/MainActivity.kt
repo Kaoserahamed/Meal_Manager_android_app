@@ -38,6 +38,12 @@ class MainActivity : ComponentActivity() {
                 val auditLogViewModel: AuditLogViewModel by viewModels()
                 val featureFlagViewModel: FeatureFlagViewModel by viewModels()
                 val abTestViewModel: AbTestViewModel by viewModels()
+                val paymentViewModel: PaymentViewModel by viewModels()
+                val deliveryViewModel: DeliveryViewModel by viewModels()
+                val calendarViewModel: CalendarViewModel by viewModels()
+                val notificationViewModel: NotificationViewModel by viewModels()
+                val loyaltyViewModel: LoyaltyViewModel by viewModels()
+                val subscriptionViewModel: SubscriptionViewModel by viewModels()
                 val navController = rememberNavController()
                 NavHost(navController = navController, startDestination = Constants.Routes.LOGIN) {
                     composable(Constants.Routes.LOGIN) { LoginScreen(navController, authViewModel) }
@@ -70,6 +76,12 @@ class MainActivity : ComponentActivity() {
                     composable("auditlog") { AuditLogScreen(navController, auditLogViewModel) }
                     composable("featureflag") { FeatureFlagScreen(navController, featureFlagViewModel) }
                     composable("abtest") { AbTestScreen(navController, abTestViewModel) }
+                    composable(Constants.Routes.PAYMENT) { PaymentScreen(navController, paymentViewModel) }
+                    composable(Constants.Routes.DELIVERY) { DeliveryScreen(navController, deliveryViewModel) }
+                    composable(Constants.Routes.CALENDAR) { CalendarScreen(navController, calendarViewModel) }
+                    composable(Constants.Routes.NOTIFICATIONS) { NotificationsScreen(navController, notificationViewModel) }
+                    composable(Constants.Routes.LOYALTY) { LoyaltyScreen(navController, loyaltyViewModel) }
+                    composable(Constants.Routes.SUBSCRIPTION) { SubscriptionScreen(navController, subscriptionViewModel) }
                 }
             }
         }

@@ -7,9 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased] - Full Platform Expansion
 ### Added
-- Backend API: 20+ REST controllers covering recipes, meal plans, nutrition, grocery, barcode, fridge, pantry, health tracking, AI, social, users, auth, compliance, monitoring.
+- Backend API: 20+ REST controllers covering recipes, meal plans, nutrition, grocery, barcode, fridge, pantry, health tracking, AI, social, users, auth, compliance, monitoring, payments, delivery, calendar, notifications, analytics, ML, multi-tenant, webhooks, search, cache, rate limiting, admin, moderation, loyalty, subscriptions.
 - Backend services, entities, DTOs, repositories, security, config, global exception handling.
-- Android phase models, repositories, ViewModels, and Compose screens for all Phase 2/3 features.
+- Android phase models, repositories, ViewModels, and Compose screens for all Phase 2/3 features plus payments, delivery, calendar, notifications, loyalty, subscriptions.
 - Navigation routes for all new screens.
 - Unit and instrumented tests across all layers.
 - Documentation: API reference, user guide, architecture, deployment guide.

@@ -56,6 +56,13 @@ object Constants {
         const val AUDIT_LOG = "auditlog"
         const val FEATURE_FLAG = "featureflag"
         const val AB_TEST = "abtest"
+        // Platform expansion routes
+        const val PAYMENT = "payment"
+        const val DELIVERY = "delivery"
+        const val CALENDAR = "calendar"
+        const val NOTIFICATIONS = "notifications"
+        const val LOYALTY = "loyalty"
+        const val SUBSCRIPTION = "subscription"
     }
     
     // Error Messages
