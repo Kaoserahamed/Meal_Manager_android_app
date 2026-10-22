@@ -45,6 +45,17 @@ object Constants {
         const val MEAL_PLAN = "mealplan"
         const val NUTRITION_DASHBOARD = "nutrition"
         const val GROCERY_LIST = "grocerylist"
+        // Phase 2/3 routes
+        const val BARCODE = "barcode"
+        const val FRIDGE = "fridge"
+        const val PANTRY = "pantry"
+        const val WEIGHT = "weight"
+        const val WATER = "water"
+        const val FASTING = "fasting"
+        const val MEAL_PHOTO = "mealphoto"
+        const val AUDIT_LOG = "auditlog"
+        const val FEATURE_FLAG = "featureflag"
+        const val AB_TEST = "abtest"
     }
     
     // Error Messages

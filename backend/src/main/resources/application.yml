@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: meal-manager-backend
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mealmanager
+    username: mealmanager
+    password: ${DB_PASSWORD:password}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+  data:
+    redis:
+      host: localhost
+      port: 6379
+server:
+  port: 8080
+logging:
+  level:
+    root: INFO
+    com.mealmanager.backend: DEBUG
+mealmanager:
+  security:
+    jwt-secret: ${JWT_SECRET:dev-secret-change-me}
+    token-expiration-seconds: 3600
+  monitoring:
+    enabled: true
+  tracing:
+    service-name: meal-manager-backend
+    sample-rate: 0.1

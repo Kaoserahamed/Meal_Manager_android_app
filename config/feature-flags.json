@@ -1,0 +1,35 @@
+# Feature flags configuration (remote config)
+{
+  "dark_mode": {
+    "enabled": false,
+    "description": "Enable dark mode theme"
+  },
+  "ai_food_recognition": {
+    "enabled": true,
+    "description": "Enable AI-powered food recognition from photos"
+  },
+  "social_sharing": {
+    "enabled": true,
+    "description": "Enable sharing meal plans and recipes"
+  },
+  "offline_mode": {
+    "enabled": true,
+    "description": "Enable offline support with local sync"
+  },
+  "recipe_scaling": {
+    "enabled": true,
+    "description": "Enable recipe serving-size scaling"
+  },
+  "grocery_aisle_sort": {
+    "enabled": true,
+    "description": "Enable grocery list aisle categorization"
+  },
+  "fasting_tracking": {
+    "enabled": true,
+    "description": "Enable intermittent fasting windows"
+  },
+  "wearable_sync": {
+    "enabled": false,
+    "description": "Enable Google Fit / HealthKit sync"
+  }
+}

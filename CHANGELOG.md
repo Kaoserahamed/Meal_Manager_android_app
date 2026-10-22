@@ -5,23 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased] - Meal Platform Foundation
-
+## [Unreleased] - Full Platform Expansion
 ### Added
-- **Recipe domain model** (`Recipe`, `Ingredient`, `NutritionInfo`) with per-serving nutrition and serving-size scaling
-- **Meal plan domain model** (`MealPlan`, `MealAssignment`, `MealType`) for weekly plans and meal assignments
-- **Nutrition domain model** (`NutritionGoal`, `NutritionLog`, `DailyTotals`, `DailyProgress`) for calorie/macro tracking
-- **Grocery list domain model** (`GroceryList`, `GroceryItem`) with ingredient aggregation, categorization and aisle sorting
-- **Repositories**: `RecipeRepository`, `MealPlanRepository`, `NutritionRepository`, `GroceryRepository` backed by Firestore
-- **ViewModels**: `RecipeViewModel`, `MealPlanViewModel`, `NutritionViewModel`, `GroceryViewModel` with `StateFlow` UI state
-- **Compose screens**: Recipe list/detail/form, Meal plan list, Nutrition dashboard, Grocery list with check-off
-- **Navigation routes** for all new screens in `Constants.Routes`
-- **Unit tests** for domain models, nutrition calculations, ingredient scaling and grocery aggregation
-- **Documentation**: README features/roadmap, this changelog entry
-
-### Changed
-- `Constants` extended with meal platform Firestore collections and navigation routes
-- `MainActivity` registers the new meal platform composable destinations
+- Backend API: 20+ REST controllers covering recipes, meal plans, nutrition, grocery, barcode, fridge, pantry, health tracking, AI, social, users, auth, compliance, monitoring.
+- Backend services, entities, DTOs, repositories, security, config, global exception handling.
+- Android phase models, repositories, ViewModels, and Compose screens for all Phase 2/3 features.
+- Navigation routes for all new screens.
+- Unit and instrumented tests across all layers.
+- Documentation: API reference, user guide, architecture, deployment guide.
+- CI/CD, Docker, Kubernetes, Helm, ArgoCD, feature-flag configs.
 
 ## [2.0.0] - 2024-01-15
 

@@ -1,0 +1,26 @@
+# A/B testing experiment configurations
+{
+  "experiments": [
+    {
+      "id": "onboarding-v2",
+      "name": "Onboarding Flow v2",
+      "status": "active",
+      "variants": ["control", "treatment"],
+      "trafficAllocation": 0.5
+    },
+    {
+      "id": "ui-layout-v2",
+      "name": "Dashboard Layout v2",
+      "status": "draft",
+      "variants": ["grid", "list"],
+      "trafficAllocation": 0.0
+    },
+    {
+      "id": "nutrition-goals-v2",
+      "name": "Nutrition Goals UI",
+      "status": "draft",
+      "variants": ["simple", "detailed"],
+      "trafficAllocation": 0.0
+    }
+  ]
+}
